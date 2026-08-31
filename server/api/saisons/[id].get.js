@@ -5,5 +5,12 @@ export default defineEventHandler((event) => {
 
   const oneSaison = saisonsData.saisons.find((saison) => saison.id === id)
 
+  if(!oneSaison) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: "Saison introuvable"
+    })
+  }
+
   return oneSaison
 })
