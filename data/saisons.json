@@ -1,0 +1,1715 @@
+{
+  "saisons": [
+    {
+      "id": "saison1",
+      "label": "5 kms",
+      "slug": "5-kms",
+      "semaines": [
+        {
+          "id": "saison1-semaine1",
+          "numero": 1,
+          "jours": [
+            {
+              "id": "saison1-semaine1-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine1-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine1-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine2",
+          "numero": 2,
+          "jours": [
+            {
+              "id": "saison1-semaine2-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine2-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine2-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine3",
+          "numero": 3,
+          "jours": [
+            {
+              "id": "saison1-semaine3-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine3-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine3-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2.5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1.5
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine4",
+          "numero": 4,
+          "jours": [
+            {
+              "id": "saison1-semaine4-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine4-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine4-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine5",
+          "numero": 5,
+          "jours": [
+            {
+              "id": "saison1-semaine5-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 0.5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine5-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine5-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine6",
+          "numero": 6,
+          "jours": [
+            {
+              "id": "saison1-semaine6-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine6-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine6-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 7
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine7",
+          "numero": 7,
+          "jours": [
+            {
+              "id": "saison1-semaine7-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 7
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 9
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine7-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine7-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine8",
+          "numero": 8,
+          "jours": [
+            {
+              "id": "saison1-semaine8-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine8-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine8-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 6
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine9",
+          "numero": 9,
+          "jours": [
+            {
+              "id": "saison1-semaine9-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine9-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 8
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine9-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 12
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine10",
+          "numero": 10,
+          "jours": [
+            {
+              "id": "saison1-semaine10-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 12
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 14
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine10-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 12
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 14
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine10-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 12
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 14
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine11",
+          "numero": 11,
+          "jours": [
+            {
+              "id": "saison1-semaine11-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 16
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 16
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine11-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 14
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 1
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 4
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 18
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine11-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 16
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 3
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 18
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "saison1-semaine12",
+          "numero": 12,
+          "jours": [
+            {
+              "id": "saison1-semaine12-jour1",
+              "label": "Jour 1 ou 2",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 10
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 25
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine12-jour2",
+              "label": "Jour 3 ou 4",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "marche",
+                  "dureeMinutes": 2
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 30
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            },
+            {
+              "id": "saison1-semaine12-jour3",
+              "label": "Jour 5, 6 ou 7",
+              "exercices": [
+                {
+                  "type": "echauffement",
+                  "dureeMinutes": 5
+                },
+                {
+                  "type": "trotte",
+                  "dureeMinutes": 40
+                },
+                {
+                  "type": "etirement",
+                  "dureeMinutes": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
