@@ -9,50 +9,56 @@ export default defineEventHandler(async () => {
     database: process.env.DB_NAME,
   })
 
-  const [saisons] = await connection.query(`
-    SELECT *
-    FROM LU_saisons
-  `)
+  try {
+    const [saisons] = await connection.query(`
+      SELECT *
+      FROM LU_saisons
+    `)
 
-  for (const saison of saisons) {
     const [semaines] = await connection.query(`
       SELECT *
       FROM LU_semaines
-      WHERE saison_id = ?
       ORDER BY numero ASC
-    `, [saison.id])
+    `)
 
-    for (const semaine of semaines) {
-      const [sessions] = await connection.query(`
-        SELECT *
-        FROM LU_sessions
-        WHERE semaine_id = ?
-        ORDER BY ordre ASC
-      `, [semaine.id])
+    const [sessions] = await connection.query(`
+      SELECT *
+      FROM LU_sessions
+      ORDER BY ordre ASC
+    `)
 
-      for (const session of sessions) {
-        const [exercices] = await connection.query(`
-          SELECT
-          id,
-          session_id,
-          type,
-          duree_minutes AS dureeMinutes,
-          ordre
-          FROM LU_exercices
-          WHERE session_id = ?
-          ORDER BY ordre ASC
-        `, [session.id])
+    const [exercices] = await connection.query(`
+      SELECT
+        id,
+        session_id,
+        type,
+        duree_minutes AS dureeMinutes,
+        ordre
+      FROM LU_exercices
+      ORDER BY ordre ASC
+    `)
 
-        session.exercices = exercices
-      }
-
-      semaine.jours = sessions
+    for (const session of sessions) {
+      session.exercices = exercices.filter(
+        exercice => exercice.session_id === session.id
+      )
     }
 
-    saison.semaines = semaines
+    for (const semaine of semaines) {
+      semaine.jours = sessions.filter(
+        session => session.semaine_id === semaine.id
+      )
+    }
+
+    for (const saison of saisons) {
+      saison.semaines = semaines.filter(
+        semaine => semaine.saison_id === saison.id
+      )
+    }
+
+    return saisons
   }
-
-  await connection.end()
-
-  return saisons
+  finally {
+    await connection.end()
+  }
 })
