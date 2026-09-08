@@ -1,4 +1,5 @@
 import mysql from 'mysql2/promise'
+import { hasDuplicateOrder, isPositiveInteger } from '../../../utils/program-validation.js'
 
 export default defineEventHandler(async (event) => {
   requireAdmin(event)
@@ -9,10 +10,10 @@ export default defineEventHandler(async (event) => {
   const saisonId = body.saisonId?.trim()
   const numero = Number(body.numero)
 
-  if (!saisonId || !numero) {
+  if (!saisonId || !isPositiveInteger(numero)) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'saisonId et numero sont requis',
+      statusMessage: 'saisonId et numero entier positif sont requis',
     })
   }
 
@@ -25,6 +26,20 @@ export default defineEventHandler(async (event) => {
   })
 
   try {
+    const existing = await hasDuplicateOrder(connection, {
+      scope: 'week',
+      parentId: saisonId,
+      order: numero,
+      ignoredId: id,
+    })
+
+    if (existing) {
+      throw createError({
+        statusCode: 409,
+        statusMessage: 'Cette semaine existe déjà dans cette saison',
+      })
+    }
+
     const [result] = await connection.query(
       `
         UPDATE LU_semaines

@@ -1,4 +1,5 @@
 import mysql from 'mysql2/promise'
+import { hasDuplicateOrder, isPositiveInteger } from '../../../utils/program-validation.js'
 
 export default defineEventHandler(async (event) => {
   requireAdmin(event)
@@ -9,11 +10,12 @@ export default defineEventHandler(async (event) => {
   const semaineId = body.semaineId?.trim()
   const label = body.label?.trim()
   const ordre = Number(body.ordre)
+  const newId = `${semaineId}-jour${ordre}`
 
-  if (!semaineId || !label || !ordre) {
+  if (!semaineId || !label || !isPositiveInteger(ordre)) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'semaineId, label et ordre sont requis',
+      statusMessage: 'semaineId, label et ordre entier positif sont requis',
     })
   }
 
@@ -26,13 +28,27 @@ export default defineEventHandler(async (event) => {
   })
 
   try {
+    const existing = await hasDuplicateOrder(connection, {
+      scope: 'session',
+      parentId: semaineId,
+      order: ordre,
+      ignoredId: id,
+    })
+
+    if (existing) {
+      throw createError({
+        statusCode: 409,
+        statusMessage: 'Une session utilise déjà cet ordre dans cette semaine',
+      })
+    }
+
     const [result] = await connection.query(
       `
         UPDATE LU_sessions
-        SET semaine_id = ?, label = ?, ordre = ?
+        SET id = ?, semaine_id = ?, label = ?, ordre = ?
         WHERE id = ?
       `,
-      [semaineId, label, ordre, id]
+      [newId, semaineId, label, ordre, id]
     )
 
     if (result.affectedRows === 0) {
@@ -43,7 +59,7 @@ export default defineEventHandler(async (event) => {
     }
 
     return {
-      id,
+      id: newId,
       semaineId,
       label,
       ordre,

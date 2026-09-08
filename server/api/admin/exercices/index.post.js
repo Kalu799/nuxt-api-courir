@@ -1,4 +1,5 @@
 import mysql from 'mysql2/promise'
+import { hasDuplicateOrder, isExerciseType, isPositiveInteger, isPositiveNumber } from '../../../utils/program-validation.js'
 
 export default defineEventHandler(async (event) => {
   requireAdmin(event)
@@ -10,10 +11,15 @@ export default defineEventHandler(async (event) => {
   const dureeMinutes = Number(body.dureeMinutes)
   const ordre = Number(body.ordre)
 
-  if (!sessionId || !type || dureeMinutes <= 0 || !ordre) {
+  if (
+    !sessionId
+    || !isExerciseType(type)
+    || !isPositiveNumber(dureeMinutes)
+    || !isPositiveInteger(ordre)
+  ) {
     throw createError({
       statusCode: 400,
-      statusMessage: 'sessionId, type, dureeMinutes et ordre sont requis',
+      statusMessage: 'sessionId, type valide, dureeMinutes et ordre entier positif sont requis',
     })
   }
 
@@ -26,6 +32,19 @@ export default defineEventHandler(async (event) => {
   })
 
   try {
+    const existing = await hasDuplicateOrder(connection, {
+      scope: 'exercise',
+      parentId: sessionId,
+      order: ordre,
+    })
+
+    if (existing) {
+      throw createError({
+        statusCode: 409,
+        statusMessage: 'Un exercice utilise déjà cet ordre dans cette session',
+      })
+    }
+
     const [result] = await connection.query(
       `
         INSERT INTO LU_exercices (
