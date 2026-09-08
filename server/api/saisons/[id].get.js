@@ -12,6 +12,8 @@ export default defineEventHandler(async (event) => {
   })
 
   try {
+    // Cette variante limite toutes les requêtes à la saison demandée, utile pour
+    // les consommateurs qui n'ont pas besoin du catalogue complet.
     const [saisons] = await connection.query(
       `
         SELECT *
@@ -69,6 +71,8 @@ export default defineEventHandler(async (event) => {
       [id]
     )
 
+    // Même format de réponse que /api/saisons : le front ne dépend pas du schéma
+    // relationnel MySQL et peut parcourir directement les niveaux du programme.
     for (const session of sessions) {
       session.exercices = exercices.filter(
         exercice => exercice.session_id === session.id

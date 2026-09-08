@@ -1,6 +1,8 @@
 import mysql from 'mysql2/promise'
 
 export default defineEventHandler(async (event) => {
+  // L'identité vient exclusivement du JWT ; le client ne peut donc modifier que
+  // sa propre progression, jamais celle d'un autre utilisateur.
   const user = getAuthenticatedUser(event)
   const body = await readBody(event)
 
@@ -16,6 +18,8 @@ export default defineEventHandler(async (event) => {
 
   try {
     if (currentSessionId !== null) {
+      // Vérifier la référence évite d'enregistrer un identifiant obsolète ou
+      // inventé. `null` est volontairement accepté pour retirer la séance active.
       const [sessions] = await connection.query(
         `
           SELECT id
@@ -44,6 +48,8 @@ export default defineEventHandler(async (event) => {
     )
 
     return {
+      // La réponse permet au client de synchroniser son état Pinia sans attendre
+      // un nouveau chargement complet du profil.
       currentSessionId,
     }
   }

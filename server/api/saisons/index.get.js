@@ -10,6 +10,9 @@ export default defineEventHandler(async () => {
   })
 
   try {
+    // La base est relationnelle, alors que l'application consomme une structure
+    // saison > semaines > séances > exercices. Les lectures sont ordonnées avant
+    // l'assemblage pour conserver l'ordre pédagogique défini dans le CMS.
     const [saisons] = await connection.query(`
       SELECT *
       FROM LU_saisons
@@ -38,6 +41,8 @@ export default defineEventHandler(async () => {
       ORDER BY ordre ASC
     `)
 
+    // L'assemblage est réalisé sur des données déjà lues : il ne déclenche pas
+    // de requête SQL supplémentaire à l'intérieur des boucles.
     for (const session of sessions) {
       session.exercices = exercices.filter(
         exercice => exercice.session_id === session.id

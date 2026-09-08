@@ -24,6 +24,8 @@ export default defineEventHandler(async (event) => {
   })
 
   try {
+    // Seuls les champs nécessaires à la connexion sont lus. Le hash ne quitte
+    // jamais le serveur et n'est utilisé que pour la comparaison bcrypt.
     const [users] = await connection.query(
       `
         SELECT
@@ -61,6 +63,8 @@ export default defineEventHandler(async (event) => {
       })
     }
 
+    // Le jeton porte les informations minimales nécessaires aux routes protégées
+    // et expire afin de ne pas laisser une session valide indéfiniment.
     const token = jwt.sign(
       {
         id: user.id,
